@@ -12,7 +12,7 @@ Developed as a Capstone Engineering Project (PBL3) at the **Faculty of Advanced 
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 - [Project Overview](#-project-overview)
 - [System Architecture](#-system-architecture)
 - [Hardware & Sensor Layer](#-hardware--sensor-layer)
@@ -26,7 +26,7 @@ Developed as a Capstone Engineering Project (PBL3) at the **Faculty of Advanced 
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Underground parking basements present hazardous fire environments: low illumination (<50 lux), high concentrations of vehicle emissions ($CO, CO_2$), limited ventilation, and dense arrangement of vehicles. Conventional threshold-based fire detectors frequently trigger false alarms from engine exhausts or fail to detect smoldering fires early.
 
@@ -38,7 +38,7 @@ Underground parking basements present hazardous fire environments: low illuminat
 
 ---
 
-## 🏛 System Architecture
+## System Architecture
 
 The end-to-end system follows a modular 4-tier pipeline:
 
@@ -76,7 +76,7 @@ flowchart TD
 
 ---
 
-## 🛠 Hardware & Sensor Layer
+## Hardware & Sensor Layer
 
 | Component | Function / Measured Feature | Output Signal |
 | :--- | :--- | :--- |
@@ -89,7 +89,7 @@ flowchart TD
 
 ---
 
-## 📊 Dataset & Preprocessing
+## Dataset & Preprocessing
 
 The dataset was collected empirically from a prototype test chamber under controlled scenarios mimicking underground parking facilities across daytime, nighttime, and low-light conditions.
 
@@ -112,7 +112,7 @@ The dataset is partitioned into three strictly independent subsets with perfectl
 
 ---
 
-## 🤖 AI Model & Benchmarking
+## AI Model & Benchmarking
 
 To rigorously validate the necessity and superiority of neural sensor fusion, three distinct models representing progressive tiers of complexity were benchmarked:
 
@@ -125,7 +125,7 @@ To rigorously validate the necessity and superiority of neural sensor fusion, th
 
 ---
 
-## 📈 Experimental Results
+## Experimental Results
 
 ### 1. Benchmark Comparison Table
 
@@ -156,7 +156,7 @@ Actual Fire             1                  3                254
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 AI-Integrated-Early-Fire-Warning-System/
@@ -180,7 +180,7 @@ AI-Integrated-Early-Fire-Warning-System/
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 ### 1. Clone the Repository
 ```bash
@@ -233,7 +233,7 @@ print(f"Probabilities: {probabilities}")
 
 ---
 
-## 👥 Project Team
+## Project Team
 
 - **Institution:** The University of Danang – University of Science and Technology (DUT)
 - **Faculty:** Faculty of Advanced Science and Technology (FAST)
@@ -247,7 +247,7 @@ print(f"Probabilities: {probabilities}")
 
 ---
 
-## 📄 License & References
+## License & References
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
