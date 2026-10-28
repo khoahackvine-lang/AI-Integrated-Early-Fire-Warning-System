@@ -4,6 +4,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-v1.3%2B-orange.svg)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-v2.0%2B-darkblue.svg)](https://pandas.pydata.org/)
 [![Hardware](https://img.shields.io/badge/Hardware-ESP32%20%7C%20MQ--2%20%7C%20MQ--9%20%7C%20DHT22-green.svg)](https://www.espressif.com/)
+[![Video Demo](https://img.shields.io/badge/Google%20Drive-Video%20Demo-red.svg)](https://drive.google.com/drive/folders/1QxvIvI_RV9evSN413LuTvQ88u4BPSlxu)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An intelligent, multi-sensor early fire detection and warning system designed for underground parking environments. The project combines **IoT embedded sensing (ESP32)** with a **Multi-Layer Perceptron (MLP) Neural Network** to achieve high-accuracy, low-latency fire and smoke risk classification while drastically minimizing false alarms caused by vehicle exhaust and environmental dust.
@@ -13,16 +14,17 @@ Developed as a Capstone Engineering Project (PBL3) at the **Faculty of Advanced 
 ---
 
 ## Table of Contents
-- [Project Overview](#-project-overview)
-- [System Architecture](#-system-architecture)
-- [Hardware & Sensor Layer](#-hardware--sensor-layer)
-- [Dataset & Preprocessing](#-dataset--preprocessing)
-- [AI Model & Benchmarking](#-ai-model--benchmarking)
-- [Experimental Results](#-experimental-results)
-- [Repository Structure](#-repository-structure)
-- [Quickstart Guide](#-quickstart-guide)
-- [Project Team](#-project-team)
-- [License & References](#-license--references)
+- [Project Overview](#project-overview)
+- [Video Demo & Real Hardware Showcase](#video-demo--real-hardware-showcase)
+- [System Architecture](#system-architecture)
+- [Hardware & Sensor Layer](#hardware--sensor-layer)
+- [Dataset & Preprocessing](#dataset--preprocessing)
+- [AI Model & Benchmarking](#ai-model--benchmarking)
+- [Experimental Results](#experimental-results)
+- [Repository Structure](#repository-structure)
+- [Quickstart Guide](#quickstart-guide)
+- [Project Team](#project-team)
+- [License & References](#license--references)
 
 ---
 
@@ -35,6 +37,38 @@ Underground parking basements present hazardous fire environments: low illuminat
 - **AI-Driven Edge Intelligence:** Lightweight Multi-Layer Perceptron (MLP 16,8) classifier optimized for embedded/edge deployment.
 - **Safety-Critical Metric Optimization:** Maximizing **Recall** and **$F_2$-Score** for hazardous classes (`Smoke` and `Fire`) to eliminate catastrophic **Type II Errors (False Negatives)**.
 - **Resilience to Environmental Noise:** Robust discrimination between authentic fire signatures and ambient disturbances (exhaust gas, dust, humidity fluctuations).
+
+---
+
+## Video Demo & Real Hardware Showcase
+
+> [!NOTE]
+> All original high-resolution demonstration and testing videos are archived on Google Drive:  
+> 🔗 **[Access Full Google Drive Video Folder](https://drive.google.com/drive/folders/1QxvIvI_RV9evSN413LuTvQ88u4BPSlxu)**
+
+### 1. Video Demos on Google Drive
+
+| Video Item | Description | Direct Access Link |
+| :--- | :--- | :---: |
+| 📁 **Full Drive Folder** | Complete collection of test recordings and demonstrations | [Open Drive Folder](https://drive.google.com/drive/folders/1QxvIvI_RV9evSN413LuTvQ88u4BPSlxu) |
+| 📹 **Full System Demo (`DEMO.MOV`)** | End-to-end system presentation and live demonstration | [Watch DEMO.MOV](https://drive.google.com/file/d/1wXMlGKRRlwQHxf-fjW09bhdmKT4y70QA6KbTMKoM-SM/view?usp=sharing) |
+| 🔬 **Hardware Breakdown (`giới thiệu linh kiện.MOV`)** | Detailed inspection of sensors, ESP32 wiring, and actuators | [Watch Hardware Video](https://drive.google.com/file/d/1F_R7SOpQlYqeNHuFipxLr8pK-hlr3mm5/view?usp=sharing) |
+| 🧪 **Chamber Testing (`IMG_7303.MOV` / `IMG_7300.MOV`)** | Live smoke & fire simulation inside the parking basement model | [Watch Testing Video](https://drive.google.com/file/d/1bNO-8tD3qLbsv-3haTuMubWfUpW7i1Ng/view?usp=sharing) |
+| 💻 **AI Model Training (`Train model AI.MOV`)** | Machine learning model training, validation, and metrics evaluation | [Watch AI Training](https://drive.google.com/file/d/1zBP5MNCQepxrhfKQJbZJ9MSVsiaOmc48/view?usp=sharing) |
+
+### 2. Physical Hardware Prototype
+
+Photographs captured directly from the physical testing prototype:
+
+| Hardware Overview | 5-Channel Flame Sensor |
+| :---: | :---: |
+| <img src="hardware/hardware_prototype_overview.jpg" width="340" alt="Hardware Overview" /> | <img src="hardware/hardware_flame_sensor.jpg" width="340" alt="5-Channel Flame Sensor" /> |
+| *Multi-sensor assembly mounted on the simulated test chamber* | *5-Channel IR flame sensor array for 180° spatial coverage* |
+
+| MicroSD Logging Module & Buzzer | Smoke Simulation Testing |
+| :---: | :---: |
+| <img src="hardware/hardware_sd_module.jpg" width="340" alt="MicroSD Module" /> | <img src="hardware/hardware_smoke_testing.jpg" width="340" alt="Chamber Testing" /> |
+| *MicroSD module for offline telemetry logging & active buzzer* | *Smoke generation test inside the basement simulation box* |
 
 ---
 
@@ -175,7 +209,13 @@ AI-Integrated-Early-Fire-Warning-System/
 ├── dataset_documentation.txt                           # Detailed dataset specification & schema
 ├── requirements.txt                                    # Python dependencies
 ├── .gitignore                                          # Git ignore configuration
-└── README.md                                           # Project documentation
+├── hardware/                                           # Physical hardware photographs & demonstration
+│   ├── hardware_prototype_overview.jpg
+│   ├── hardware_flame_sensor.jpg
+│   ├── hardware_sd_module.jpg
+│   ├── hardware_buzzer_alarm.jpg
+│   └── hardware_smoke_testing.jpg
+└── README.md                                           # Project documentation & Video Drive links
 ```
 
 ---
