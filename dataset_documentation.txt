@@ -1,0 +1,117 @@
+DATASET DOCUMENTATION - FIRE DETECTION SENSOR DATASET
+====================================================
+
+1. Dataset Overview
+-------------------
+Dataset name: Fire Detection Sensor Dataset
+Problem type: Supervised Learning - Multi-class Classification
+Input data type: Tabular sensor data
+Application: Fire detection using ESP32 and sensor system
+
+The dataset is used to train an AI model that classifies sensor data into three states:
+0 = Normal
+1 = Smoke
+2 = Fire
+
+2. Data Source and Collection
+-----------------------------
+The data is collected from an ESP32-based IoT system using multiple sensors:
+- DHT22 for temperature and humidity
+- MQ2 for smoke/gas signal
+- MQ9 for gas signal
+- Flame sensors f1, f2, f3, f4, f5
+
+The collected data is stored in Excel files and divided into:
+- fire_train_70.xlsx
+- fire_validation_10.xlsx
+- fire_test_20.xlsx
+
+3. Feature Description
+----------------------
+Input features:
+- temp_c: temperature value in Celsius
+- hum_pct: humidity value in percent
+- mq2_raw: raw analog value from MQ2 sensor
+- mq9_raw: raw analog value from MQ9 sensor
+- f1, f2, f3, f4, f5: flame sensor values
+
+Target label:
+- label: output class of the sample
+
+4. Label Description
+--------------------
+0 = Normal: normal environment without smoke or fire
+1 = Smoke : smoke condition
+2 = Fire  : fire condition
+
+5. Preprocessing Pipeline
+-------------------------
+The preprocessing process includes:
+- Feature selection: select 9 sensor features
+- Data augmentation: add small Gaussian noise to analog sensor values in training data only
+- Standardization: use StandardScaler to normalize feature scale before training
+
+The validation and test datasets are not augmented. They are kept unchanged to ensure objective evaluation.
+
+6. Data Augmentation
+--------------------
+Data augmentation is applied only to the training set.
+Small Gaussian noise is added to analog features:
+- temp_c
+- hum_pct
+- mq2_raw
+- mq9_raw
+
+Digital flame sensor features f1-f5 are kept unchanged.
+The labels are also kept unchanged.
+
+Augmentation enabled: True
+Extra ratio: 0.2
+Noise level: 0.02
+
+7. Data Split
+-------------
+The dataset is divided into:
+- Train: 70%
+- Validation: 10%
+- Test: 20%
+
+Train original samples: 2709
+Train after augmentation: 3249
+Validation samples: 387
+Test samples: 774
+
+8. Model Usage
+--------------
+The dataset is used to train and compare:
+- MLP (16,8)
+- Gaussian Naive Bayes
+- Dummy Classifier
+
+The selected model is MLP (16,8).
+
+9. Evaluation Metrics
+---------------------
+The models are evaluated using:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- F2-score
+- Normal Recall
+- Smoke Recall
+- Fire Recall
+- Confusion Matrix
+
+10. Limitations
+---------------
+The dataset is collected from a specific sensor system and specific experimental conditions.
+When deployed in a different environment, the model may require additional data collection and retraining.
+
+11. Output Files
+----------------
+This training script generates:
+- mlp_fire_detection_model.pkl
+- model_comparison_results.xlsx
+- mlp_prediction_probabilities.xlsx
+- dataset_documentation.txt
