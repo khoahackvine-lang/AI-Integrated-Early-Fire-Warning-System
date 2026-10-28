@@ -50,11 +50,11 @@ Underground parking basements present hazardous fire environments: low illuminat
 
 | Video Item | Description | Direct Access Link |
 | :--- | :--- | :---: |
-| 📁 **Full Drive Folder** | Complete collection of test recordings and demonstrations | [Open Drive Folder](https://drive.google.com/drive/folders/1QxvIvI_RV9evSN413LuTvQ88u4BPSlxu) |
-| 📹 **Full System Demo (`DEMO.MOV`)** | End-to-end system presentation and live demonstration | [Watch DEMO.MOV](https://drive.google.com/file/d/1wXMlGKRRlwQHxf-fjW09bhdmKT4y70QA6KbTMKoM-SM/view?usp=sharing) |
-| 🔬 **Hardware Breakdown (`giới thiệu linh kiện.MOV`)** | Detailed inspection of sensors, ESP32 wiring, and actuators | [Watch Hardware Video](https://drive.google.com/file/d/1F_R7SOpQlYqeNHuFipxLr8pK-hlr3mm5/view?usp=sharing) |
-| 🧪 **Chamber Testing (`IMG_7303.MOV` / `IMG_7300.MOV`)** | Live smoke & fire simulation inside the parking basement model | [Watch Testing Video](https://drive.google.com/file/d/1bNO-8tD3qLbsv-3haTuMubWfUpW7i1Ng/view?usp=sharing) |
-| 💻 **AI Model Training (`Train model AI.MOV`)** | Machine learning model training, validation, and metrics evaluation | [Watch AI Training](https://drive.google.com/file/d/1zBP5MNCQepxrhfKQJbZJ9MSVsiaOmc48/view?usp=sharing) |
+|  **Full Drive Folder** | Complete collection of test recordings and demonstrations | [Open Drive Folder](https://drive.google.com/drive/folders/1QxvIvI_RV9evSN413LuTvQ88u4BPSlxu) |
+|  **Full System Demo (`DEMO.MOV`)** | End-to-end system presentation and live demonstration | [Watch DEMO.MOV](https://drive.google.com/file/d/1wXMlGKRRlwQHxf-fjW09bhdmKT4y70QA6KbTMKoM-SM/view?usp=sharing) |
+|  **Hardware Breakdown (`giới thiệu linh kiện.MOV`)** | Detailed inspection of sensors, ESP32 wiring, and actuators | [Watch Hardware Video](https://drive.google.com/file/d/1F_R7SOpQlYqeNHuFipxLr8pK-hlr3mm5/view?usp=sharing) |
+|  **Chamber Testing (`IMG_7303.MOV` / `IMG_7300.MOV`)** | Live smoke & fire simulation inside the parking basement model | [Watch Testing Video](https://drive.google.com/file/d/1bNO-8tD3qLbsv-3haTuMubWfUpW7i1Ng/view?usp=sharing) |
+|  **AI Model Training (`Train model AI.MOV`)** | Machine learning model training, validation, and metrics evaluation | [Watch AI Training](https://drive.google.com/file/d/1zBP5MNCQepxrhfKQJbZJ9MSVsiaOmc48/view?usp=sharing) |
 
 ### 2. Physical Hardware Prototype
 
